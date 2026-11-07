@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Decky Downloader Sender</title>
+<link rel="stylesheet" href="popup.css"><script src="client.js" defer></script><script src="remote.js" defer></script><script src="popup.js" defer></script></head>
+<body><h1>Decky Downloader</h1><p>Send to your handheld on the home network.</p><button type="button" id="open-tab" class="secondary">Open in a tab</button><p class="hint">Keep this window open while uploading a torrent. Use a tab for a larger workspace.</p>
+<form id="connection"><label>Receiver address<input id="address" required placeholder="http://192.168.1.50:6802" autocomplete="off"></label>
+<label>Password<input id="key" type="password" required autocomplete="off"></label><button>Save and test connection</button></form>
+<form id="download"><label>Download link<textarea id="source" rows="3" maxlength="16384" required></textarea></label>
+<label>Type<select id="kind"><option value="file">File / magnet</option><option value="video">Video page</option><option value="audio">Audio (MP3)</option></select></label>
+<label>Video quality<select id="quality"><option value="best">Best available</option><option value="1080">1080p</option><option value="720">720p</option><option value="480">480p</option></select></label>
+<div id="destination" class="remote-destination"></div>
+<button type="button" id="current" class="secondary">Use current page as video</button><button id="send">Send to handheld</button></form>
+<p id="result" role="status" aria-live="polite"></p><button id="forget" class="secondary">Forget connection</button>
+<button id="manager-page" type="button" class="secondary">Open full manager and settings</button>
+<h2>Downloads</h2><p id="live" role="status"></p><ul id="jobs"></ul>
+<p class="hint">Enter the password you set in the plugin. Public links and magnets; no browser cookies or login sessions are sent. The password is stored only in this Firefox profile. Use HTTP only on a trusted home network.</p></body></html>

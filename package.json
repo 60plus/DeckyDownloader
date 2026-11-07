@@ -1,0 +1,33 @@
+{
+  "name": "decky-downloader",
+  "version": "0.1.12",
+  "description": "A controller and touch download manager for SPlug and Decky Loader, inspired by Varia.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/60plus/DeckyDownloader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/60plus/DeckyDownloader.git"
+  },
+  "scripts": {
+    "build": "node scripts/stage-plugin.mjs && rollup -c",
+    "typecheck": "tsc --noEmit",
+    "package": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "@decky/api": "1.1.2",
+    "@decky/ui": "4.10.4"
+  },
+  "devDependencies": {
+    "@decky/rollup": "1.0.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "playwright": "1.65.0",
+    "rollup": "4.64.5",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

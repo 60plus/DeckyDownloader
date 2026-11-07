@@ -1,0 +1,5 @@
+packages:
+  - .
+nodeLinker: hoisted
+storeDir: .work/pnpm-store
+verifyDepsBeforeRun: false

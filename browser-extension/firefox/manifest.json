@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Decky Downloader Sender",
+  "version": "0.1.5",
+  "description": "Send links and torrents to your handheld, choose files, manage the download queue and follow progress live.",
+  "permissions": ["storage", "menus", "activeTab"],
+  "optional_host_permissions": ["http://*/*"],
+  "background": { "scripts": ["client.js", "background.js"] },
+  "action": { "default_title": "Send to Decky Downloader", "default_popup": "popup.html" },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "decky-downloader-sender@60plus.local",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}

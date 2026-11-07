@@ -1,0 +1,17 @@
+{
+  "name": "Decky Downloader",
+  "author": "60plus",
+  "flags": [],
+  "api_version": 1,
+  "publish": {
+    "description": "Download files, torrents, videos and music right inside Steam. Manage your queue with a gamepad or touch, and send links from your PC or phone.",
+    "tags": [
+      "downloads",
+      "files",
+      "network",
+      "torrents",
+      "video"
+    ],
+    "image": "https://raw.githubusercontent.com/60plus/DeckyDownloader/main/assets/cover.png"
+  }
+}
